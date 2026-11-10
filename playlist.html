@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="app-body">
+
+    <div class="main-content playlist-content">
+       
+        <div class="playlist-header">
+            <i class="fa-solid fa-chevron-left" onclick="window.history.back()"
+                style="cursor: pointer; font-size: 20px;"></i>
+        </div>
+
+    
+        <div class="album-cover">
+            <img src="images/Ed Sheeran (2).svg" alt="Album Cover">
+        </div>
+
+        <p class="album-desc">Tune in to Top Tracks from Imagine Dragons, Alan Walker and many more</p>
+
+        <div class="playlist-meta">
+            <i class="fa-brands fa-spotify" style="color: #1DB954;"></i>
+            <span>Spotify</span>
+        </div>
+        <p class="playlist-stats">191,165 likes • 3h 45min</p>
+
+        <div class="playlist-actions">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+
+    
+        <div class="song-list">
+            <div class="song-item">
+                <img src="images/Believer Poster (2).svg" alt="Alone">
+                <div class="song-info">
+                    <p class="song-title">Alone</p>
+                    <p class="song-artist">Alan Walker</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+
+            <div class="song-item">
+                <img src="images/song2.svg" alt="Let Me Love You">
+                <div class="song-info">
+                    <p class="song-title">Let me love you</p>
+                    <p class="song-artist">Justin Bieber feat DJ Snake</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+
+            <div class="song-item">
+                <img src="images/song3.svg" alt="Ignite">
+                <div class="song-info">
+                    <p class="song-title">Ignite</p>
+                    <p class="song-artist">Alan Walker</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+
+            <div class="song-item">
+                <img src="images/song4.svg" alt="Taki Taki">
+                <div class="song-info">
+                    <p class="song-title">Taki Taki</p>
+                    <p class="song-artist">DJ Snake feat Selena Gomez</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="bottom-nav">
+        <div class="nav-item" onclick="window.location.href='home.html'"><i class="fa-solid fa-house"></i><br>Home</div>
+        <div class="nav-item" onclick="window.location.href='search.html'"><i
+                class="fa-solid fa-magnifying-glass"></i><br>Search</div>
+        <div class="nav-item"><i class="fa-solid fa-book-open"></i><br>Your Library</div>
+        <div class="nav-item"><i class="fa-brands fa-spotify"></i><br>Premium</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="app-body">
+
+    <div id="sideMenu" class="side-menu">
+        <div class="profile-section">
+            
+            <h3>Maha</h3>
+        </div>
+        <ul class="menu-list">
+            <li><i class="fa-solid fa-house"></i> Home</li>
+            <li><i class="fa-regular fa-comment-dots"></i> Messages</li>
+            <li><i class="fa-regular fa-bell"></i> Notifications</li>
+            <li><i class="fa-regular fa-bookmark"></i> Bookmarks</li>
+            <li><i class="fa-regular fa-user"></i> Profile</li>
+        </ul>
+        <div class="nav-item" onclick="window.location.href='login.html'">
+            <i  class="fa-solid fa-arrow-right-from-bracket"></i><br>Log out</div>
+    </div>
+   
+    <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+
+    <div class="main-content">
+        <div class="header">
+            <h2>Made for you</h2>
+            <div class="header-icons">
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <i class="fa-solid fa-bars" onclick="toggleMenu()" style="cursor: pointer;"></i> <!-- زر فتح القائمة -->
+            </div>
+        </div>
+
+        <div class="horizontal-scroll">
+            <div class="card-large">
+                <img src="images/Ed Sheeran.svg" alt="Ed Sheeran">
+                <div class="card-text">Ed Sheeran, Katy Perry, Pitbull and more</div>
+            </div>
+            <div class="card-large">
+                <img src="images/Justin Bieber.svg" alt="Catch the Latest">
+                <div class="card-text">Catch the Latest Playlist made just for you...</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Trending now</h2>
+        <div class="horizontal-scroll">
+            <div class="card-small">
+                <img src="images/Believer Poster.svg" alt="Believer">
+                <p class="song-title">Believer</p>
+                <p class="song-artist">Song • Imagine Dragons</p>
+            </div>
+            <div class="card-small">
+                <img src="images/Harley poster.svg" alt="Harley's">
+                <p class="song-title">Harley's in Hawaii</p>
+                <p class="song-artist">Song • Katy Perry</p>
+            </div>
+            <div class="card-small">
+                <img src="images/Cheap Thrills.svg" alt="Song">
+                <p class="song-title">Cheap Thrills</p>
+                <p class="song-artist">Song • Sia</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Top picks for you</h2>
+        <div class="horizontal-scroll">
+            <div class="card-small">
+                <img src="images/Maroon 5.svg" alt="Maroon 5">
+                <p class="song-title">MAROON 5</p>
+            </div>
+            <div class="card-small">
+                <img src="images/Katy Perry.svg" alt="Top Pick">
+                <p class="song-title">Top Pick</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <div class="nav-item active" onclick="window.location.href='Home.html'"><i
+                class="fa-solid fa-house"></i><br>Home</div>
+        <div class="nav-item" onclick="window.location.href='search.html'"><i
+                class="fa-solid fa-magnifying-glass"></i><br>Search</div>
+         <div class="nav-item" onclick="window.location.href='playlist.html'">
+             <i class="fa-solid fa-book-open"></i><br>Your Library
+        </div>
+        <div class="nav-item" onclick="window.location.href='player.html'">
+        <i class="fa-brands fa-spotify"></i><br>Now Playing</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

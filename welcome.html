@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Spotify | Welcome</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="js/routes.js" defer></script>
+    </head>
+<body class="auth-page">
+    <main class="auth-card welcome-card">
+        <img src="images/spotify.png" alt="Spotify Logo" class="welcome-logo-img">
+        <h1>Millions of songs<br>Free on Spotify.</h1>
+        <a class="btn btn-green" href="signup.html">Sign up free</a>
+    <button class="btn btn-outline" type="button" data-demo="Phone sign-in">
+        <img src="images/phone.png" alt="Phone" class="social-icon">
+        Continue with phone number
+    </button>
+    
+    <button class="btn btn-outline" type="button" data-demo="Google sign-in">
+        <img src="images/google.png" alt="Google" class="social-icon">
+        Continue with Google
+    </button>
+    
+    <button class="btn btn-outline" type="button" data-demo="Facebook sign-in">
+        <img src="images/facebook.png" alt="Facebook" class="social-icon">
+        Continue with Facebook
+    </button>
+        <a class="text-link" href="login.html">Log in</a>
+        <p class="small-note" id="demo-message" aria-live="polite"></p>
+    </main>
+    <script>document.querySelectorAll('[data-demo]').forEach(b=>b.addEventListener('click',()=>document.getElementById('demo-message').textContent=b.dataset.demo+' requires provider authentication setup.'));</script>
+</body>
+</html>
